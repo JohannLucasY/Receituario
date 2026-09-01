@@ -1,10 +1,12 @@
 import { useState } from 'react'
 import './App.css'
-import FichaAnimal from './components/fichaAnimal'
+import FichaAnimal from './components/FichaAnimal'
+
 
 function App() {
 
-  const [informacao, setInformacao] = useState({ // Um objeto
+  const [mostrarFicha, setMostrarFicha] = useState(false)
+  const [informacao, setInformacao] = useState({ // Um objeto. useStates = um interruptor que representa uma pergunta, 'true or false'.
     nome: '',
     especie: '',
     raca: '',
@@ -20,6 +22,7 @@ function App() {
 
   function handleSubmit(e) {
     e.preventDefault() // Duvidas!!! 
+    setMostrarFicha(true)
     console.log(informacao)
   }
 
@@ -108,7 +111,7 @@ function App() {
         <button type="submit">Gerar ficha</button>
       </form>
 
-      <FichaAnimal dados={informacao} />
+      {mostrarFicha && <FichaAnimal dados={informacao} />}
     </main>
 
     </> // fechamento do FichaAnimal
