@@ -1,9 +1,9 @@
 import './FichaAnimal.css'
 function FichaAnimal(props) {
 
+  
   return (
-    <div className='folha-a4'>
-
+    <div className="folha-a4" ref={props.referencia}>
       <header>
         <p>CRMV: 00000</p>
         <p>Dra. Nome da Médica</p>
