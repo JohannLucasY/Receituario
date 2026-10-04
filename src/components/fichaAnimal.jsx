@@ -12,8 +12,7 @@ function FichaAnimal(props) {
         <h1>Nome: {props.dados.nome}</h1>
         <p>Espécie: {props.dados.especie}</p>
         <p>Raça: {props.dados.raca}</p>
-        <p>Idade: {props.dados.idade}</p>
-        <p>Peso: {props.dados.peso}</p>
+        <p>Idade: {props.dados.idade}</p>    
         <p>Tutor: {props.dados.tutor}</p>
       </main>
       <section>

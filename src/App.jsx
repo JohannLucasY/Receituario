@@ -11,7 +11,6 @@ function App() {
     especie: '',
     raca: '',
     idade: '',
-    peso: '',
     tutor: '',
     observacoes: ''
   })
@@ -77,18 +76,7 @@ function App() {
             />
           </label>
           <p>Idade: {informacao.idade}</p>
-
-          <label>
-            Peso:
-            <input
-              type="text"
-              value={informacao.peso}
-              name='peso'
-              onChange={handleChange}
-            />
-          </label>
-          <p>Peso: {informacao.peso} kg</p>
-
+          
           <label>
             Tutor:
             <input
